@@ -34,10 +34,24 @@ public class Client {
     private String adresseMail;
 
     @ColumnInfo(name = "telephone1")
-    private int telephone1;
+    private Long telephone1;
 
     @ColumnInfo(name = "telephone2")
-    private int telephone2;
+    private Long telephone2;
+
+    public Client(String nom, String prenom, int numeroDeRue, String numeroExtension, String nomDeRue, int codePostal, String nomDeLaCommune, String adresseMail, Long telephone1, Long telephone2) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.numeroDeRue = numeroDeRue;
+        this.numeroExtension = numeroExtension;
+        this.nomDeRue = nomDeRue;
+        this.codePostal = codePostal;
+        this.nomDeLaCommune = nomDeLaCommune;
+        this.adresseMail = adresseMail;
+        this.telephone1 = telephone1;
+        this.telephone2 = telephone2;
+    }
+
 
     public Long getId() {
         return id;
@@ -111,19 +125,19 @@ public class Client {
         this.adresseMail = adresseMail;
     }
 
-    public int getTelephone1() {
+    public Long getTelephone1() {
         return telephone1;
     }
 
-    public void setTelephone1(int telephone) {
+    public void setTelephone1(Long telephone) {
         this.telephone1 = telephone;
     }
 
-    public int getTelephone2() {
+    public Long getTelephone2() {
         return telephone2;
     }
 
-    public void setTelephone2(int telephone2) {
+    public void setTelephone2(Long telephone2) {
         this.telephone2 = telephone2;
     }
 }

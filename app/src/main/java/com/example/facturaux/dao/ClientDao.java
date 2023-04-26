@@ -33,4 +33,5 @@ public interface ClientDao {
     Client getClientById(long clientId);
 
 
+    void clear();
 }

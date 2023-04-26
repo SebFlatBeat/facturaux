@@ -8,6 +8,7 @@ public interface ClientRepository {
     void insert(Client client);
     void update(Client client);
     void delete(Client client);
+    void deleteAllClients();
     List<Client> getAllClients();
     Client getClientById(long clientId);
 }

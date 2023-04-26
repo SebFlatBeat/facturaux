@@ -31,6 +31,11 @@ public class ClientRepositoryImpl implements ClientRepository {
     }
 
     @Override
+    public void deleteAllClients() {
+        clientDao.clear();
+    }
+
+    @Override
     public List<Client> getAllClients() {
         return clientDao.getAllClients();
     }
